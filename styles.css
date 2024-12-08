@@ -1,0 +1,118 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e6e6fa, #f0f8ff);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6a5acd;
+    color: white;
+    padding: 20px;
+    font-size: 1.8em;
+    border-bottom: 5px solid #483d8b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção principal */
+.content {
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    width: 600px;
+    font-size: 1.1em;
+}
+
+.details {
+    background: #f8f8ff;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.details strong {
+    color: #6a5acd;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+}
+
+.button.accept {
+    background-color: #6a5acd;
+}
+
+.button.decline {
+    background-color: #ff6347;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button.accept:hover {
+    background-color: #483d8b;
+}
+
+.button.decline:hover {
+    background-color: #cc2b1d;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px; /* Aumentamos a margem superior do rodapé */
+    font-size: 0.9em;
+    color: #6a5acd;
+    margin-bottom: 20px; /* Adicionamos uma margem inferior para o rodapé */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.4em;
+    }
+
+    .content {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px 20px;
+        width: 130px;
+    }
+}
